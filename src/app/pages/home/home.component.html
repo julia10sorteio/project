@@ -1,0 +1,46 @@
+
+
+
+
+<body>
+  <div class="header">
+    <h1>
+      Home
+    </h1>
+  </div>
+  <div class="text-superior">
+<app-texto-superior>Selecione uma das opções abaixo</app-texto-superior>
+</div>
+<div class="content">
+  <div class="button">
+    <div class="icon">
+      <img src="../../../assets/images/lamp.svg" [routerLink]="['/ambiente']"
+      routerLinkActive="router-link-active" alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Controle de lâmpadas instaladas
+      </h1>
+    </div>
+  </div>
+
+  <div class="button">
+    <div class="icon">
+      <img src="../../../assets/icons/calc.svg" [routerLink]="['/selecionar-ambiente']"
+      routerLinkActive="router-link-active" alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Cálculo para melhor lâmpada
+      </h1>
+    </div>
+  </div>
+</div>
+<app-menu></app-menu>
+<div class="footer"></div>
+</body>
+
+
+
+
+

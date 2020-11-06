@@ -1,0 +1,14 @@
+<!-- <h1 mat-dialog-title>{{ data.title }}</h1> -->
+<div class="container">
+  <div class="message" mat-dialog-content>
+    <h3> <strong> {{ data.description }} </strong> </h3>
+  </div>
+
+  <div class="image">
+    <img src="../../../assets/icons/error-circle.svg" alt="">
+  </div>
+
+  <div class="botao" mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Tentar novamente</button>&nbsp;
+  </div>
+</div>

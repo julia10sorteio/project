@@ -1,0 +1,29 @@
+
+
+<body>
+  <header>
+    <app-header>{{roomName}}</app-header>
+  </header>
+
+  <div class="text">
+
+
+    <h1 class="txt-titulo">Lâmpadas instaladas</h1>
+  </div>
+
+
+  <div class="botoes">
+    <button class="button-left" [routerLink]="['/informacoes-lampadas', roomName, lamp.id]"
+    *ngFor="let lamp of lampList;let index = index"
+    routerLinkActive="router-link-active">{{lamp.name}}</button>
+
+
+  </div>
+  <div class="add-button" >
+    <app-botao-avancar style="cursor: pointer;"  [routerLink]="['/cadastrar-lampada', roomName]">Adicionar</app-botao-avancar>
+  </div>
+  <app-menu></app-menu>
+
+<div class="footer"></div>
+</body>
+

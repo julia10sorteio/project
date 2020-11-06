@@ -1,0 +1,61 @@
+<div class="container">
+
+  <header>
+    <app-header>Cadastre-se</app-header>
+  </header>
+<div class="texto-s">
+  <app-texto-superior>Informe os dados abaixo</app-texto-superior>
+</div>
+  <div class="row" *ngIf="authError">
+      <div class="col-12 alert alert-danger">
+        {{ authError?.message }}
+      </div>
+  </div>
+    <div class="cadastro">
+      <form #userRegForm="ngForm" (ngSubmit)="createUser(userRegForm)">
+        <p>
+            <input
+            ngModel #firstname="ngModel"
+            id="firstName" name="firstName" required="required" type="text" placeholder="Nome"/>
+
+          </p>
+
+          <p>
+            <input
+            ngModel #lastname="ngModel"
+            id="lastName" name="lastName" required="required" type="text" placeholder="Sobrenome"/>
+
+          </p>
+
+          <p>
+
+
+            <input
+            ngModel #email="ngModel"
+            id="email" name="email" required="required" type="email" placeholder="Email" />
+
+          </p>
+          <p>
+
+
+            <input
+            ngModel #password="ngModel"
+            id="password" name="password" required="required" type="password" placeholder=" Senha" />
+
+          </p> <p>
+
+
+            <input  id="password" name="password" required="required" type="password" placeholder=" Confirmar senha" />
+
+          </p>
+
+          <div class="btn">
+            <button type="submit">Confirmar</button>
+         </div>
+     </form>
+  </div>
+
+
+  <div class="footer"></div>
+
+  </div>

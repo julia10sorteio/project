@@ -1,0 +1,583 @@
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url(../../../../assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url(../../../../assets/fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../../../../assets/fonts/OpenSans-Bold.ttf);
+
+}
+
+.container {
+ @media only screen and (min-width: 990px) {
+   position: fixed;
+   width: 36%;
+   height: 93%;
+   margin-left: 32%;
+   margin-top: 7%;
+   overflow: hidden;
+     }
+  position: absolute;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  left: 0rem;
+  right: 0rem;
+  top:0rem;
+  overflow: scroll;
+
+
+
+  .text-superior{
+     margin-top: 19% !important;
+
+     @media only screen  and (orientation: landscape)  {
+        margin-top: 8% !important;
+        }
+        @media only screen  and (min-width: 990px)  {
+           margin-top: -7% !important;
+           }
+
+           @media only screen  and (min-width :990px)  {
+              margin-top: 6% !important;
+              }
+
+}
+
+  .nome{
+
+     #nome{
+        outline: none;
+        border:none;
+        border-bottom:1px solid #585858;
+         width:20em;
+         font-size: 2.5rem;
+         color: #8C8C8C;
+       background-color: #f8f8f8;
+       margin-left: 9%;
+       margin-top: 6%;
+       font-family: 'OpenSans-Regular';
+
+       @media only screen  and (min-width: 990px)  {
+         font-size: 0.9rem;
+         margin-left: 22%;
+         margin-top: 1%;
+         width: 15rem;
+
+        }
+       //  @media only screen  and (min-width :990px)  {
+       //     margin-left: 20%;
+       //     }
+
+     }
+     // @media only screen  and (orientation: landscape)  {
+     //    margin-top: -4% !important;
+     //    }
+
+
+
+  }
+  .text-checkbox{
+     margin-top: 8%;
+     margin-left: 10%;
+     font-size: 2.2rem;
+     color: #8C8C8C;
+     font-family: 'OpenSans-SemiBold';
+
+     @media only screen  and (orientation: landscape)  {
+        font-size: 1.2rem;
+
+        }
+
+  }
+
+
+  .radio{
+     margin-top: 20px;
+     margin-left: 6%;
+
+     font-size: 2.2rem;
+     @media only screen  and (min-width: 990px)  {
+     margin-left: -8%;
+     }
+
+
+
+     font-family: 'OpenSans-Regular';
+     color: #313131;
+
+
+
+     input[type=radio] {
+
+
+        width: 14%;
+        height: 4em;
+        margin-top: -1px;
+        vertical-align: middle;
+
+       //  @media only screen  and (orientation: landscape)  {
+       //     width: 14%;
+
+       //  margin-left: -1%;
+
+
+       //     }
+           @media only screen  and (min-width: 990px)  {
+             height: 1.3em;
+
+   margin-left: 32%;
+
+             width: 6%;
+
+              }
+
+
+
+
+    }
+
+   //  @media only screen  and (orientation: landscape)  {
+   //   font-size: 1.2rem;
+   //   margin-top: 1.4%;
+
+
+   //   }
+     @media only screen  and (min-width: 990px)  {
+       font-size: 0.8rem;
+
+   margin-top: -5.5%;
+
+       margin-left: -18%;
+
+        }
+
+
+    }
+
+    #fabricante{
+     outline: none;
+     border:none;
+     border-bottom:1px solid #585858;
+      width:20em;
+      font-size: 2.5rem;
+      color: #8C8C8C;
+    background-color: #f8f8f8;
+    margin-left: 9%;
+    margin-top: 6%;
+    font-family: 'OpenSans-Regular';
+
+    @media only screen  and(min-width: 990px) {
+     font-size: 0.9rem;
+
+   margin-left: 22%;
+
+
+   margin-top: 2%;
+
+   width: 15rem;
+
+     }
+
+       //  @media only screen  and (min-width :990px)  {
+       //   margin-left: 16.5%;
+
+       //     }
+
+
+    }
+
+    .segunda-fileira {
+
+     display: flex;
+
+     // @media only screen  and (orientation: landscape)  {
+
+     //    margin-top: -6%;
+
+
+     //    }
+        @media only screen  and (min-width: 990px)  {
+
+         margin-left: -20%;
+         margin-top: -5%;
+
+
+           }
+
+
+
+     #tensao{
+       outline: none;
+       border:none;
+       border-bottom:1px solid #585858;
+       width:33%;
+       font-size: 2.5rem;
+       color: #8C8C8C;
+       background-color: #f8f8f8;
+       margin-left: 9%;
+       margin-top: 6%;
+       font-family: 'OpenSans-Regular';
+
+       // @media only screen  and (orientation: landscape)  {
+       //  font-size: 1.2rem;
+
+
+
+       //  }
+       //  @media only screen  and (min-width: 990px)  {
+
+
+
+       //     }
+           @media only screen  and (min-width :990px)  {
+             font-size: 0.9rem;
+             margin-left: 7rem;
+             width: 16%;
+             margin-left: 35%;
+
+              }
+
+    }
+
+
+    #potencia{
+     outline: none;
+     border:none;
+     border-bottom:1px solid #585858;
+     width:33%;
+      font-size: 2.5rem;
+      color: #8C8C8C;
+    background-color: #f8f8f8;
+    margin-left: 15% ;
+    margin-top: 6%;
+    font-family: 'OpenSans-Regular';
+   //  @media only screen  and (orientation: landscape)  {
+   //   font-size: 1.2rem;
+   //   margin-left: 14.3%;
+
+
+
+   //   }
+     @media only screen  and (min-width: 990px)  {
+
+        font-size: 0.9rem;
+        width:19%;
+        margin-left: 9% ;
+
+        }
+       //  @media only screen  and (min-width :990px)  {
+       //     margin-left: 6.5% !important;
+
+       //     }
+
+
+ }
+
+
+
+    }
+
+
+    #lumens{
+     outline: none;
+     border:none;
+     border-bottom:1px solid #585858;
+      width:20em;
+      font-size: 2.5rem;
+      color: #8C8C8C;
+    background-color: #f8f8f8;
+    margin-left: 9%;
+    margin-top: 6%;
+    font-family: 'OpenSans-Regular';
+
+     @media only screen  and (min-width: 990px)  {
+       margin-top: 2%;
+       width: 15rem;
+       margin-left: 22%;
+       font-size: 0.9rem;
+        }
+
+
+
+    }
+
+    .text-input{
+     display: flex;
+     @media only screen  and (orientation: landscape)  {
+
+        margin-top: -2rem;
+
+
+
+        }
+
+        @media only screen  and (min-width: 990px)  {
+
+         margin-top: -3%;
+         margin-left: 4.5rem;
+
+               }
+               @media only screen  and (min-width: 990px)  {
+
+                 margin-left: 5%;
+
+               }
+
+
+
+
+     .text1{
+        margin-top: 40px;
+        margin-left: 9%;
+        font-size: 2.2rem;
+        color: #8C8C8C;
+        font-family: 'OpenSans-SemiBold';
+
+           @media only screen  and (min-width: 990px)  {
+             font-size: 0.8rem;
+             margin-top: 20px ;
+             margin-left: 18%;
+             color: #8C8C8C;
+             font-family: "OpenSans-SemiBold";
+
+                  }
+
+
+
+     }
+     .text2{
+        margin-top: 40px;
+        margin-left: 13%;
+        font-size: 2.2rem;
+        color: #8C8C8C;
+        font-family: 'OpenSans-SemiBold';
+
+           @media only screen  and (min-width: 990px)  {
+
+             font-size: 0.8rem;
+             margin-top: 20px ;
+             margin-left: 3%;
+             color: #8C8C8C;
+             font-family: "OpenSans-SemiBold";
+
+                  }
+
+
+
+     }
+
+    }
+    .datas{
+        display: flex;
+
+       //  @media only screen  and (orientation: landscape)  {
+       //   margin-top: -4%;
+
+
+
+
+       //     }
+
+           @media only screen  and (min-width: 990px)  {
+
+             margin-top: -4%;
+
+
+                  }
+
+
+
+
+
+        #data-install{
+           outline: none;
+           border:none;
+           border-bottom:1px solid #585858;
+            width:37%;
+            font-size: 2.5rem;
+            color: #8C8C8C;
+          background-color: #f8f8f8;
+          margin-left: 9%;
+          margin-top: 20px;
+          font-family: 'OpenSans-Regular';
+
+         //  @media only screen  and (orientation: landscape)  {
+         //   font-size: 1.2rem;
+
+
+
+
+         //   }
+           @media only screen  and (min-width: 990px)  {
+             font-size: 0.7rem;
+             width: 26%;
+             margin-left: 22%;
+
+
+
+                  }
+
+
+        }
+
+        #data-queimo{
+           outline: none;
+           border:none;
+           border-bottom:1px solid #585858;
+            width:37%;
+            font-size: 2.5rem;
+            color: #8C8C8C;
+          background-color: #f8f8f8;
+          margin-left: 9% ;
+          margin-top: 20px;
+          font-family: 'OpenSans-Regular';
+         //  @media only screen  and (orientation: landscape)  {
+         //   font-size: 1.2rem;
+         //   margin-left: 6.6% !important;
+
+
+
+         //   }
+           @media only screen  and (min-width: 990px)  {
+
+             font-size: 0.7rem;
+             width: 26%;
+             margin-left: 3%;
+
+
+                  }
+
+
+
+
+
+        }
+
+    }
+    #tempo{
+     outline: none;
+     border:none;
+     border-bottom:1px solid #585858;
+      width:20em;
+      font-size: 2.5rem;
+      color: #8C8C8C;
+    background-color: #f8f8f8;
+    margin-left: 9%;
+    margin-top: 65px;
+    font-family: 'OpenSans-Regular';
+
+   //  @media only screen  and (orientation: landscape)  {
+
+
+
+
+
+   //   }
+     @media only screen  and (min-width: 990px)  {
+
+       margin-top: 1%;
+       width: 55%;
+       margin-left: 22%;
+       font-size: 0.9rem;
+
+
+
+            }
+
+
+
+
+
+
+
+
+    }
+    .btn-confirma{
+       margin-top: 10%;
+       // @media only screen  and (orientation: landscape)  {
+       //  margin-top: 2%;
+       //  font-size: 1.5rem;
+       //  }
+       //  @media only screen  and (min-width: 990px)  {
+
+
+       //     margin-left:5.3rem;
+
+
+       //          }
+                @media only screen  and (min-width: 990px)  {
+
+                 margin-bottom: 21%;
+                 margin-top: 4%;
+               }
+
+
+
+    }
+
+    .rodape{
+       display: none;
+    }
+
+
+
+
+
+
+
+  }
+
+
+
+  .text{
+   position: relative;
+   width: 85%;
+   margin-top: 5%;
+   margin-left: 7.5%;
+   margin-right: 7.5%;
+   text-align: center;
+ //   @media (orientation: landscape) {
+ //     margin-top: -2%;
+ //  }
+
+  @media only screen and (min-width: 990px) {
+   margin-top: 0%;
+   margin-bottom: 8%;
+ }
+
+
+   h1 {
+     font-family: 'OpenSans-SemiBold';
+     font-size: 3rem;
+     color: #313131;
+     line-height: 4rem;
+   //   @media (orientation: landscape) {
+   //     font-size: 1.3rem;
+   //  }
+     @media only screen and (min-width: 990px) {
+       font-size: 0.9rem;
+       line-height: 3rem;
+   }
+ }
+
+ }
+
+ @media only screen and (min-width: 990px) {
+#Led{
+ margin-left: 24px;
+}
+}
+
+@media only screen and (min-width: 990px) {
+ .footer{
+
+background: white;
+height: 300px;
+ }
+}

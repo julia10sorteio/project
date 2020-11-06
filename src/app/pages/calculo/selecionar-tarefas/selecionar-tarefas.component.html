@@ -1,0 +1,20 @@
+
+
+<body>
+  <header>
+    <app-header class="header">Cálculo</app-header>
+  </header>
+  <div class="text-superior">
+  <app-texto-superior>Selecione a precisão das tarefas a serem realizadas neste ambiente</app-texto-superior>
+</div>
+
+<div  class="botao" >
+   <app-botao-selecao (click)="navigateTo($event, 'BAIXA')" routerLinkActive="router-link-active">Baixa</app-botao-selecao>
+
+
+  <app-botao-selecao (click)="navigateTo($event, 'MEDIA')" routerLinkActive="router-link-active">Média</app-botao-selecao>
+  <app-botao-selecao (click)="navigateTo($event, 'ALTA')" routerLinkActive="router-link-active">Alta</app-botao-selecao>
+</div>
+<app-menu></app-menu>
+<div class="footer"></div>
+</body>

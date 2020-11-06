@@ -1,0 +1,115 @@
+
+
+<div class="container">
+  <header>
+    <app-header>{{roomName}}</app-header>
+  </header>
+
+
+  <div class="text-superior">
+    <app-texto-superior>Informações</app-texto-superior>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<div class="formulario">
+  <form [formGroup]="form">
+
+
+    <div>
+      <input id="fabricante" name="name" formControlName="name" required="required" type="text" placeholder="Nome" />
+    </div>
+
+    <div class="text-input">
+      <div class="text1">
+        <div>Tipo de lâmpada</div>
+      </div>
+
+    </div>
+
+    <div class="radio">
+
+      <input type="radio" id="Fluorescente" name="type" value="Fluorescente" formControlName="type">
+      <label for="Fluorescente" class="lab1">Fluorescente</label>
+
+      <input type="radio" id="Led" name="type" value="Led" formControlName="type">
+      <label for="Fluorescente">LED</label>
+
+    </div>
+
+
+    <div class="fabricante-input" >
+      <input id="fabricante" name="fabricante" formControlName="fabricante" required="required" type="text"
+        placeholder="Fabricante" />
+
+    </div>
+
+
+
+    <div class="segunda-fileira">
+      <input id="tensao" name="tensao" formControlName="tensao" required="required" type="number"
+        placeholder="Tensão (V)" />
+      <input id="potencia" name="potencia" formControlName="potencia" required="required" type="number"
+        placeholder="Potência (W)" />
+    </div>
+
+
+    <div>
+      <input id="lumens" name="lumens" formControlName="lumens" required="required" type="number"
+        placeholder="Lúmens (lm)" />
+    </div>
+
+    <div class="text-input">
+
+
+      <div class="text1">
+        <div>Data de instalação</div>
+      </div>
+
+      <div class="text2">
+        <div>Data que queimou</div>
+      </div>
+
+
+    </div>
+    <div class="datas">
+      <input id="data-install" name="data-install" formControlName="data-install" required="required" type="date"
+        placeholder="dd / mm / aaaa" />
+
+      <input id="data-queimo" name="data-queimo" formControlName="data-queimo" required="required" type="date"
+        placeholder="dd / mm / aaaa" />
+
+    </div>
+
+
+
+
+    <div>
+      <input id="tempo" name="tempo" formControlName="tempo" required="required" type="number"
+        placeholder="Tempo aprox. de uso p/ dia (min)" />
+    </div>
+
+
+  </form>
+
+
+  <div class="all-buttons">
+    <button class="delete-button" (click)="delete()">Excluir</button>
+
+      <button class="edit-button" (click)="submit()">Editar</button>
+
+
+  </div>
+</div>
+  <app-menu></app-menu>
+  <div class="footer"></div>
+</div>
+
+

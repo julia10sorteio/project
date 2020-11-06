@@ -1,0 +1,53 @@
+<div class="container">
+
+  <app-header class="header">Cálculo</app-header>
+  <div class="text-superior">
+    <app-texto-superior>Informe a largura e o comprimento em metros do ambiente escolhido</app-texto-superior>
+  </div>
+
+
+
+  <div class="form">
+    <form>
+      <p>
+        <input
+          #comprimento
+          name="comprimento"
+          [(ngModel)]="model.comprimento"
+          #comprimento="ngModel"
+          required="required"
+          type="number"
+          placeholder="Comprimento"
+
+        />
+      </p>
+      <p>
+        <input
+          #largura
+          name="largura"
+          [(ngModel)]="model.largura"
+          #largura="ngModel"
+          required="required"
+          type="number"
+          placeholder="Largura"
+        />
+      </p>
+
+      <div class="botao" >
+        <app-botao-avancar
+        (click)="calcularLumens()"
+        class="btn"
+        routerLinkActive="router-link-active"
+        >Avançar</app-botao-avancar
+      >
+      </div>
+
+
+
+    </form>
+  </div>
+
+  <app-menu></app-menu>
+  <div class="footer"></div>
+</div>
+

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url(../../../assets/fonts/OpenSans-SemiBold.ttf);
+}
+
+.text {
+  position: relative;
+  width: 85%;
+  margin-top: 5%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  text-align: center;
+  @media (orientation: landscape) {
+    margin-top: -6%;
+    position: relative;
+    width: 64%;
+    margin-top: 5%;
+    margin-left: 14.5%;
+    margin-right: 14.5%;
+    text-align: center;
+ }
+
+ @media only screen and (min-width: 990px) {
+
+  margin-top: -6%;
+
+}
+
+
+  h1 {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 3rem;
+    color: #313131;
+    line-height: 4rem;
+
+    @media only screen and (min-width: 990px) {
+      font-size: 0.9rem;
+      line-height: 1rem;
+
+  }
+}
+}

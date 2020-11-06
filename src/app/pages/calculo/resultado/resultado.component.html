@@ -1,0 +1,27 @@
+
+
+<body>
+  <header>
+    <app-header  class="header">Resultado</app-header>
+  </header>
+  <div class="text-superior">
+    <app-texto-superior>Certo! Com base nestas informações, a melhor lâmpada para
+      instalar neste ambiente é:</app-texto-superior>
+  </div>
+
+
+
+  <div class="image">
+    <img class="tam" src="../../../../assets/images/lamp-result.svg" alt="">
+  </div>
+
+  <div class="canvas">
+      <h2>Tipo: {{ model.tipo }}</h2>
+      <h2>Potência: {{ model.watts }}</h2>
+      <h2>Fluxo luminoso: {{ model.lumen }} lm</h2>
+      <h2>Média de preço atualmente: {{ model.valor }}</h2>
+  </div>
+  <app-menu></app-menu>
+  <div class="footer"></div>
+</body>
+

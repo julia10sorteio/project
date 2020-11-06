@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url(../../../../assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url(../../../../assets/fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../../../../assets/fonts/OpenSans-Bold.ttf);
+
+}
+
+.container {
+  position: absolute;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  left: 0rem;
+  right: 0rem;
+  top:0rem;
+  @media only screen and (min-width: 990px) {
+   width: 36%;
+   height: 100%;
+   margin-left: 32%;
+   margin-top: 7%;
+   position: fixed;
+   overflow: hidden;
+
+     }
+
+
+  .header {
+     text-align: center;
+     z-index: 1;
+     // position: fixed;
+     width: 100%;
+     height: 8%;
+     left: 0rem;
+     top: 0rem;
+     background: #F7C211;
+
+
+     h1 {
+       font-family: 'OpenSans-Bold';
+       font-size: 2.8rem;
+       color: #2156AE;
+       position: relative;
+       text-align: center;
+       margin-top: 0rem;
+       margin-left: -8.5rem;
+       top: 50%;
+       transform: translateY(-50%);
+       text-decoration: none;
+       display: inline-block;
+       justify-content: center;
+       align-items: center;
+
+       @media only screen and (min-width: 990px) {
+        font-size: 2rem;
+
+
+       }
+
+     }
+
+     img{
+    position: relative;
+    float: left;
+    top: 50%;
+    margin-left: 4.5rem;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 3rem;
+
+     }
+   }
+   .container-text{
+      margin-top: 12rem;
+     text-align: center;
+
+     @media  (orientation : landscape) {
+
+        margin-top: 6.5rem;
+
+
+       }
+       @media  (min-width:1650px) {
+
+        margin-top: 12rem;
+
+
+       }
+
+  h2{
+     font-family: 'OpenSans-Bold';
+     font-size: 2.4rem;
+     padding: 1rem;
+
+  }
+  }
+
+  .form{
+     text-align: center !important;
+     margin-top: 5rem;
+
+
+     font-family: 'OpenSans-Bold';
+     @media only screen and (min-width: 990px) {
+       margin-top: 4.5rem;
+
+       }
+
+  input {
+
+outline: none;
+  border:none;
+  border-bottom:1px solid #585858;
+   width:50rem;
+   font-size: 2.5rem;
+
+   padding-top: 5rem;
+ background-color: #f8f8f8;
+ font-family: 'OpenSans-Regular';
+
+
+ @media only screen and (min-width: 990px) {
+   padding-top: 1px;
+   width:16rem;
+   font-size: 0.8rem;
+ }
+
+
+
+   }
+   .botao{
+     margin-top: 12.5rem;
+
+     @media only screen and (min-width: 990px) {
+
+       margin-bottom: 27.6%;
+   margin-top: 8%;
+
+       }
+
+
+
+
+}
+
+  }
+
+
+  }
+
+
+  @media only screen and (min-width: 990px) {
+   .header {
+     position:relative;
+     max-width: 980px;
+     margin:0 auto;
+     left: auto;
+     top: auto;
+   }
+   .content {
+     position:relative;
+     margin:0 auto;
+     justify-content: center;
+   }
+
+ }
+ @media only screen and (min-width: 990px) {
+   .footer{
+ background: white;
+ height: 300px;
+   }
+ }
+ .text{
+   position: relative;
+   width: 85%;
+   margin-top: 5%;
+   margin-left: 7.5%;
+   margin-right: 7.5%;
+   text-align: center;
+
+
+  @media only screen and (min-width: 990px) {
+   margin-top: 4%;
+   margin-bottom: 7%;
+   width: 260px;
+   cursor: ew-resize;
+   margin-left: 96px;
+ }
+
+
+   h1 {
+     font-family: 'OpenSans-SemiBold';
+     font-size: 3rem;
+     color: #313131;
+     line-height: 4rem;
+
+     @media only screen and (min-width: 990px) {
+       font-size: 0.9rem;
+       line-height: 1rem;
+
+   }
+ }
+
+ }
+
+ .text-superior{
+
+   @media only screen and (min-width: 990px) {
+     margin-top: 9%;
+     width: 79%;
+     margin-left: 12%;
+   }
+
+ }

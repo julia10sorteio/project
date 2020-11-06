@@ -1,0 +1,124 @@
+
+
+
+<body>
+  <header>
+    <app-header class="header">Cálculo</app-header>
+  </header>
+  <div class="text">
+
+
+    <h1 class="txt-titulo">Selecione o ambiente que desejar</h1>
+  </div>
+<div class="primeira-fileira">
+  <div class="button">
+    <div class="icon">
+      <img src="../../../../assets/icons/bedroom.svg" (click)="navigateTo($event, 'QUARTO')"
+      routerLinkActive="router-link-active"alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Quarto
+      </h1>
+    </div>
+  </div>
+
+  <div class="button">
+    <div class="icon">
+      <img src="../../../../assets/icons/restroom.svg" (click)="navigateTo($event, 'BANHEIRO')"
+      routerLinkActive="router-link-active"alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Banheiro
+      </h1>
+    </div>
+  </div>
+
+  <div class="button">
+    <div class="icon">
+      <img src="../../../../assets/icons/kitchen.svg"  (click)="navigateTo($event, 'COZINHA')"
+      routerLinkActive="router-link-active" alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Cozinha
+      </h1>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="segunda-fileira">
+  <div class="button">
+    <div class="icon">
+      <img src="../../../../assets/icons/hall.svg"  (click)="navigateTo($event, 'HALL')"
+      routerLinkActive="router-link-active" alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Hall
+      </h1>
+    </div>
+  </div>
+
+  <div class="button">
+    <div class="icon">
+      <img src="../../../../assets/icons/pantry.svg"  (click)="navigateTo($event, 'DESPENSA')"
+      routerLinkActive="router-link-active" alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Despensa
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div class="terceira-fileira">
+  <div class="button">
+    <div class="icon">
+      <img src="../../../../assets/icons/living-room.svg"  (click)="navigateTo($event, 'SALA_DE_ESTAR')"
+      routerLinkActive="router-link-active" alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Sala de estar
+      </h1>
+    </div>
+  </div>
+
+  <div class="button">
+    <div class="icon">
+      <img src="../../../../assets/icons/stairs.svg"  (click)="navigateTo($event, 'ESCADAS')"
+      routerLinkActive="router-link-active" alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Escadas
+      </h1>
+    </div>
+  </div>
+
+  <div class="button">
+    <div class="icon">
+      <img src="../../../../assets/icons/garage.svg"  (click)="navigateTo($event, 'GARAGEM')"
+      routerLinkActive="router-link-active" alt="">
+    </div>
+    <div class="text">
+      <h1>
+        Garagem
+      </h1>
+    </div>
+  </div>
+
+</div>
+
+<app-menu></app-menu>
+
+<div class="footer"></div>
+
+</body>
+
+
