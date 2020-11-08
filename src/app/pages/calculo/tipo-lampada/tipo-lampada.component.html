@@ -1,18 +1,16 @@
-
-
-<body>
-  <header>
-    <app-header>Cálculo</app-header>
-  </header>
-  <div class="text-superior">
-    <app-texto-superior>Selecione o tipo de lâmpada que deseja instalar em seu ambiente</app-texto-superior>
-  </div>
-
-<div class="botao" >
-  <app-botao-selecao (click)="procurarLampada($event, 'FLUORESCENTE')" routerLinkActive="router-link-active">Fluorescente</app-botao-selecao>
-  <app-botao-selecao (click)="procurarLampada($event, 'LED')" routerLinkActive="router-link-active">LED</app-botao-selecao>
+<div class="main-container">
+  <body>
+    <div class="justify-center-div">
+      <header>
+        <app-header>Cálculo</app-header>
+      </header>
+      <h3>Selecione o tipo de lâmpada que deseja instalar em seu ambiente</h3>
+      <div class="botao" >
+        <app-botao-selecao (click)="procurarLampada($event, 'FLUORESCENTE')" routerLinkActive="router-link-active">Fluorescente</app-botao-selecao>
+        <app-botao-selecao (click)="procurarLampada($event, 'LED')" routerLinkActive="router-link-active">LED</app-botao-selecao>
+      </div>
+      <app-menu></app-menu>
+    </div>
+  </body>
 </div>
-  <app-menu></app-menu>
-  <div class="footer"></div>
-</body>
 

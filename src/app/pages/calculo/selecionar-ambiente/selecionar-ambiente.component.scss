@@ -114,8 +114,7 @@ body {
 
           img{
             @media (orientation: landscape) {
-               height: 42%;
-                width: 42%;
+               width: 45px;
             }
 
             @media only screen and (min-width: 990px) {
@@ -123,8 +122,7 @@ body {
                     }
 
             @media only screen and (min-width: 990px) {
-              height: 45%;
-            width: 45%;
+              width: 45px;  
                 }
 
           }
@@ -188,8 +186,7 @@ body {
     img{
 
       @media only screen and (min-width: 990px) {
-        height: 39%;
-      width: 39%;
+        width: 45px;
           }
 
         }
@@ -278,8 +275,7 @@ body {
         img{
 
           @media only screen and (min-width: 990px) {
-            height: 39%;
-          width: 39%;
+            width : 45px
               }
 
 

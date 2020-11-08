@@ -3,16 +3,51 @@
   src: url(../../../../assets/fonts/OpenSans-SemiBold.ttf);
 }
 
+.main-container{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+
+  @media only screen and (min-width:990px) {
+    padding-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.justify-center-div{
+    overflow: hidden;
+  @media only screen and (min-width: 990px) {
+    background-color: #F8F8F8;
+  }
+  h3{
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    padding: 35px;
+    @media only screen and (min-width: 990px) {
+      font-size: 20px;
+      padding: 0px;
+    }
+  }
+}
+
 body {
   position: fixed;
   height: 100%;
   width: 100%;
   background-color: f8f8f8;
   @media only screen and (min-width: 990px) {
-    width: 36%;
-    height: 100%;
-    margin-left: 32%;
-    margin-top: 7%;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
       }
   .bg-modal {
     width: 100%;
@@ -151,6 +186,8 @@ height: 300px;
 }
 
 .botao{
-  margin-bottom: 35.5%;
-  margin-top: 10%;
+  height : 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
