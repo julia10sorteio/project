@@ -1,22 +1,24 @@
-<div class="container">
-  <app-header>Cálculo</app-header>
-  <div class="text-superior">
-    <app-texto-superior>Certo! Para manter uma boa iluminação neste ambiente, será necessário uma
-      quantidade de no mínimo {{ model.quantidade }} lúmens</app-texto-superior>
+<div class="main-container">
+  <div class="container">
+    <div class="justify-center-div">
+      <app-header>Cálculo</app-header>
+      <h3>Certo! Para manter uma boa iluminação neste ambiente, será necessário uma
+        quantidade de no mínimo {{ model.quantidade }} lúmens</h3>
+      <div class="content">
+        <div class="lampada">
+          <img src="../../../../assets/images/iluminous.png" alt="" />
+        </div>
+    
+        <div class="botão">
+          <app-botao-avancar
+            [routerLink]="['/tipo-lampada']"
+            routerLinkActive="router-link-active"
+            >Avançar</app-botao-avancar
+          >
+        </div>
+      </div>
+      <app-menu></app-menu>
+    </div>
   </div>
-
-  <div class="lampada">
-    <img src="../../../../assets/images/iluminous.png" alt="" />
-  </div>
-
-  <div class="botão">
-    <app-botao-avancar
-      [routerLink]="['/tipo-lampada']"
-      routerLinkActive="router-link-active"
-      >Avançar</app-botao-avancar
-    >
-  </div>
-
-  <app-menu></app-menu>
-  <div class="footer"></div>
 </div>
+

@@ -1,21 +1,19 @@
-
-
-<body>
-  <header>
-    <app-header class="header">Controle de lâmpadas</app-header>
-  </header>
-  <div class="text">
-
-
-  <h1 class="txt-titulo">Selecione o ambiente abaixo</h1>
+<div class="main-container">
+  <body>
+    <div class="justify-center-div">
+      <header>
+        <app-header class="header">Controle de lâmpadas</app-header>
+      </header>
+      <h3>Selecione o ambiente abaixo</h3>
+      <div class="content">
+        <div class="botoes" >
+          <button class="button-right" *ngFor="let room of roomList;let index = index" [routerLink]="['/lampadas-instaladas', room]"
+            [class.button-left]="index % 2 == 0" [class.button-right]="index % 2 == 1">{{room}}</button>
+        </div>
+      </div>
+      <app-menu></app-menu>
+    </div>
+  </body>
 </div>
-  <div class="botoes" >
-    <button class="button-right" *ngFor="let room of roomList;let index = index" [routerLink]="['/lampadas-instaladas', room]"
-      [class.button-left]="index % 2 == 0" [class.button-right]="index % 2 == 1">{{room}}</button>
-
-  </div>
-  <app-menu></app-menu>
-  <div class="footer"></div>
-</body>
 
 

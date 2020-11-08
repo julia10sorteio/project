@@ -19,11 +19,12 @@
   box-shadow: 0rem 0rem 2rem #2157ae59;
 
   @media only screen and (min-width: 990px) {
-    height: 5%;
+    height: 50px;
     width: 45%;
     margin-left: 29%;
-    margin-top: 4%;
+    margin-top: 20px;
     margin-bottom: 0%;
+    transform: translateY(-40px);
     border-radius: 0.5rem;
     box-shadow: 0rem 0rem 0.5rem #2157ae59;
   }
@@ -73,7 +74,7 @@
           @media only screen and (min-height:800px) {
 
 
-            margin-top: 3%;
+            margin-top: 13px;
 
 
                 }

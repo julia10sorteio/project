@@ -1,29 +1,27 @@
-
-
-<body>
-  <header>
-    <app-header routeLink="/ambiente">{{roomName}}</app-header>
-  </header>
-  <div class="texto">
-     <app-texto-superior>Lâmpadas instaladas</app-texto-superior>
-  </div>
-
-
-  <div class="image">
-    <img src="../../../../assets/images/lamp-404.svg" alt="">
-  </div>
-
-    <div class="text">
-      <p class="message">
-        Hmm... parece que você não cadastrou nenhuma lâmpada ainda
-      </p>
-      <p class="link" [routerLink]="['/cadastrar-lampada', roomName]"
-      routerLinkActive="router-link-active">
-        Cadastrar lâmpada
-      </p>
+<div class="main-container">
+  <body>
+    <div class="justify-center-div">
+      <header>
+        <app-header routeLink="/ambiente">{{roomName}}</app-header>
+      </header>
+      <h3>Lâmpadas instaladas</h3>
+      <div class="content">
+        <div class="image">
+          <img src="../../../../assets/images/lamp-404.svg" alt="">
+        </div>
+        <div class="text">
+          <p class="message">
+            Hmm... parece que você não cadastrou nenhuma lâmpada ainda
+          </p>
+          <p class="link" [routerLink]="['/cadastrar-lampada', roomName]"
+          routerLinkActive="router-link-active">
+            Cadastrar lâmpada
+          </p>
+        </div>
+      </div>
+      <app-menu></app-menu>
     </div>
-    <app-menu></app-menu>
-    <div class="footer"></div>
-</body>
+  </body>
+</div>
 
 

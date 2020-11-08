@@ -18,6 +18,9 @@
   top: 0rem;
   background: #F7C211;
 
+  @media only screen and (min-width: 990px) {
+    height: 80px;
+   }
     .back-arrow-button{
 
       position: absolute;
@@ -31,9 +34,6 @@
 
       @media only screen and (min-width: 990px) {
         width: 1.0rem;
-
-
-
        }
   }
 

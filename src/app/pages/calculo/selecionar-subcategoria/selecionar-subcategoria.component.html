@@ -1,22 +1,16 @@
-
-
-<body>
-  <header>
-    <app-header  class="header">Cálculo</app-header>
-  </header>
-  <div class="text-superior">
-
-
-  <app-texto-superior>
-    Selecione a subcategoria do ambiente escolhido
-  </app-texto-superior>
-
+<div class="main-container">
+  <body>
+    <div class="justify-center-div">
+      <header>
+        <app-header  class="header">Cálculo</app-header>
+      </header>
+      <h3>Selecione o ambiente abaixo</h3>
+      <div class="botoes">
+        <app-botao-selecao (click)="navigateTo($event, 'LOCAL')" routerLinkActive="router-link-active">Local</app-botao-selecao>
+        <app-botao-selecao (click)="navigateTo($event, 'GERAL')" routerLinkActive="router-link-active">Geral</app-botao-selecao>
+      </div>
+      <app-menu></app-menu>
+    </div>
+  </body>
 </div>
-<div class="botoes">
-  <app-botao-selecao (click)="navigateTo($event, 'LOCAL')" routerLinkActive="router-link-active">Local</app-botao-selecao>
-  <app-botao-selecao (click)="navigateTo($event, 'GERAL')" routerLinkActive="router-link-active">Geral</app-botao-selecao>
-</div>
-  <app-menu></app-menu>
-<div class="footer"></div>
-</body>
 

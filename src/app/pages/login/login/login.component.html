@@ -1,69 +1,58 @@
-<div class="container">
+<div class="main-container">
+  <div class="container">
+    <div class="justify-center-div">
+    <header>
+      <div class="header">
+        <h1 class="logo">
+          <img class="logo-image" src="../../../../assets/images/logo.png" alt="">
+          <h2>Faça seu login</h2>
 
-  <div>
-  <header>
-    <div class="header">
-      <h1 class="logo">
-        <img class="logo-image" src="../../../../assets/images/logo.png" alt="">
-      </h1>
-    </div>
-  </header>
-
-  <div>
-    <h2>Faça seu login</h2>
-  </div>
-
-  <div class="logar">
-    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
-
-      <div class="row" *ngIf="authError">
-        <div class="col-12 alert alert-danger">{{ authError?.message }}</div>
+        </h1>
       </div>
+    </header>
+    <div class="logar">
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
 
-      <p>
-        <input ngModel #email="ngModel" id="email" name="email" required="required" type="email" placeholder="Email" />
-      </p>
+        <div class="row" *ngIf="authError">
+          <div class="col-12 alert alert-danger">{{ authError?.message }}</div>
+        </div>
 
-      <div class="espacamento"></div>
-
-      <p>
-        <input ngModel #password="ngModel" class="email" id="password" name="password" required="required" type="password"
-          placeholder="Senha" />
-      </p>
-
-      <div class="link">
         <p>
-          Esqueceu sua senha?
+          <input ngModel #email="ngModel" id="email" name="email" required="required" type="email" placeholder="Email" />
         </p>
-      </div>
 
-      <div class="btn">
-        <button>Logar</button>
-      </div>
+        <div class="espacamento"></div>
 
-      <div class="text">
-        <hr class="line-esq">
-        <h3 >ou</h3>
-        <hr class="line-dir">
-      </div>
+        <p>
+          <input ngModel #password="ngModel" class="email" id="password" name="password" required="required" type="password"
+            placeholder="Senha" />
+        </p>
 
-      <div class="button-register">
-        <button [routerLink]="['/auth/cadastrar']"
-        routerLinkActive="router-link-active">Criar conta</button>
-      </div>
+        <div class="link">
+          <p>
+            Esqueceu sua senha?
+          </p>
+        </div>
 
-    </form>
+        <div class="btn">
+          <button>Logar</button>
+        </div>
 
+        <div class="text">
+          <hr class="line-esq">
+          <h3 >ou</h3>
+          <hr class="line-dir">
+        </div>
+
+        <div class="button-register">
+          <button [routerLink]="['/auth/cadastrar']"
+          routerLinkActive="router-link-active">Criar conta</button>
+        </div>
+
+      </form>
     <div class="footer"></div>
   </div>
-
-
-
-
-
-
-
-
+</div>
 <!--
   <footer class="rodape">
     <div class=cadastra-se>
