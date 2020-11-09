@@ -40,7 +40,7 @@
   }
 
   h1 {
-    font-family: 'OpenSans-Bold';
+    font-family: 'OpenSans-Bold' !important;
     font-size: 2.8rem;
     color: #2156AE;
     position: relative;
@@ -51,7 +51,7 @@
     text-decoration: none;
 
     @media only screen and (min-width: 990px) {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
 
 
      }
