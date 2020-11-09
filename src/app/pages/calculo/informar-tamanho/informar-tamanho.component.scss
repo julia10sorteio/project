@@ -37,9 +37,12 @@
     margin-top: 20px;
     font-size: 3rem;
     padding: 35px;
+    line-height: 75px;
+    font-family: OpenSans-Regular;
     @media only screen and (min-width: 990px) {
       font-size: 20px;
       padding: 0px;
+      line-height: inherit;
     }
   }
 }
@@ -171,7 +174,7 @@ outline: none;
 
    }
    .botao{
-     margin-top: 12.5rem;
+     margin-top: 6.5rem;
 
      @media only screen and (min-width: 990px) {
 

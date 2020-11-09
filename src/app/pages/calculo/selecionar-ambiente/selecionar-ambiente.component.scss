@@ -30,9 +30,12 @@
     margin-top: 20px;
     font-size: 3rem;
     padding: 35px;
+    line-height: 75px;
+    font-family: OpenSans-Regular;
     @media only screen and (min-width: 990px) {
       font-size: 20px;
       padding: 0px;
+      line-height: inherit;
     }
   }
 }
@@ -78,7 +81,7 @@ body {
     position: relative;
     display: flex;
     text-align: center;
-    height: 33%;
+    height: 30%;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -138,7 +141,7 @@ body {
         top: 50%;
 
         @media only screen and (min-width: 990px) {
-          top: 40%;
+          top: 25%;
 
             }
 
@@ -176,7 +179,7 @@ body {
       position: relative;
       display: flex;
       text-align: center;
-      height: 33%;
+      height: 30%;
       width: 100%;
       top: 0px;
       margin-left: 0px;
@@ -229,7 +232,7 @@ body {
         top: 50%;
 
         @media only screen and (min-width: 990px) {
-          top: 44%;
+          top: 25%;
             }
 
 
@@ -265,7 +268,7 @@ body {
       position: relative;
       display: flex;
       text-align: center;
-      height: 33%;
+      height: 30%;
       width: 100%;
       top: 0px;
       margin-left: 0px;
@@ -317,13 +320,7 @@ body {
         top: 50%;
 
         @media only screen and (min-width: 990px) {
-          top: 46%;
-          width: 125%;
-    margin-left: -9%;
-            }
-
-        @media only screen and (min-width: 990px) {
-          top: 46%;
+          top: 25;
           width: 125%;
     margin-left: -9%;
             }

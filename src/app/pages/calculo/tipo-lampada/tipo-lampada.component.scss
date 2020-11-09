@@ -1,8 +1,16 @@
 @font-face {
+  font-family: 'OpenSans-Regular';
+  src: url(../../../../assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
   font-family: 'OpenSans-SemiBold';
   src: url(../../../../assets/fonts/OpenSans-SemiBold.ttf);
 }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../../../../assets/fonts/OpenSans-Bold.ttf);
 
+}
 .main-container{
 
   position: absolute;
@@ -30,9 +38,12 @@
     margin-top: 20px;
     font-size: 3rem;
     padding: 35px;
+    line-height: 75px;
+    font-family: OpenSans-Regular;
     @media only screen and (min-width: 990px) {
       font-size: 20px;
       padding: 0px;
+      line-height: inherit;
     }
   }
 }
@@ -186,8 +197,11 @@ height: 300px;
 }
 
 .botao{
-  height : 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+  @media only screen and (min-width: 990px) {
+    height : 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
